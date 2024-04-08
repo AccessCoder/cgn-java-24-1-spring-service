@@ -29,8 +29,8 @@ public class EmployeeController {
     }
 
     @PostMapping
-    public void createNewEmployee(@RequestBody EmployeeWOEmployeeNum newEmployee){
-        service.createNewEmployee(newEmployee);
+    public EmployeeWOSocialSecNum createNewEmployee(@RequestBody EmployeeWOEmployeeNum newEmployee){
+        return service.createNewEmployee(newEmployee);
     }
 
 
